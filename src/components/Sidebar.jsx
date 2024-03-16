@@ -16,8 +16,14 @@ export function Sidebar({onShowSidebar}){
                     <Link to={'/about'}>
                         <li className="flex items-center gap-2"><IoMdInformationCircle className="text-2xl"/> About</li>
                     </Link>
-                    <li className="flex items-center gap-2"><IoFileTrayFull className="text-2xl"/> Portfolio</li>
-                    <li className="flex items-center gap-2"><IoMdContact className="text-2xl"/> Contact</li>
+
+                    <Link to={'/portfolio'}>
+                        <li className="flex items-center gap-2"><IoFileTrayFull className="text-2xl"/> Portfolio</li>
+                    </Link>
+
+                    <Link to={'/contact'}>
+                        <li className="flex items-center gap-2"><IoMdContact className="text-2xl"/> Contact</li>
+                    </Link>
                 </ul>
             </div>
         </>
