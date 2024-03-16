@@ -3,10 +3,10 @@ import { Header } from "../fragments/Header";
 export default function AboutPage(){
     return(
         <>
-            <div className="w-full bg-black">
+            <div className="w-full gap-16 flex flex-col bg-black">
                 <Header/>
 
-                <div className=" w-full  h-dvh pt-24 text-white px-5">
+                <div className=" w-full  pt-24 text-white px-5">
                     <div className="w-full bg-bgcolor rounded-xl p-5 flex flex-col items-center gap-3">
                         <div className="flex gap-2 text-textcolor">
                             <h1 className="text-lg font-montserat">About Me</h1>
