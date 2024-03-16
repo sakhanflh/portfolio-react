@@ -15,7 +15,7 @@ export default function AboutPage(){
                             </div>
                         </div>
                         
-                        <div className="border-2 border-textcolor w-56 h-56 rounded-full overflow-hidden">
+                        <div className="border-2 border-textcolor w-44 h-44 rounded-full overflow-hidden">
                             <img src="/img/sakha3.jpg" alt="" className="w-full h-full object-cover"/>
                         </div>
 
