@@ -7,6 +7,7 @@ import AboutPage from './pages/aboutPage'
 import PortfolioPage from './pages/portfolioPage'
 import ContactPage from './pages/contactPage'
 import Screen from './App'
+import SubmitPage from './pages/submitPage'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/about' element={<AboutPage/>}/>
         <Route path='/portfolio' element={<PortfolioPage/>}/>
         <Route path='/contact' element={<ContactPage/>}/>
+        <Route path='/submit' element={<SubmitPage/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
