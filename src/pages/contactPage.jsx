@@ -53,6 +53,7 @@ export default function ContactPage(){
 
                     <div className="flex w-full justify-center">
                         <button id="my-form-button" className="bg-bgcolor p-5 text-textcolor rounded-lg">Send my message</button>
+                        <p id="my-form-status"></p>
                     </div>
                 </form>
             </div>
