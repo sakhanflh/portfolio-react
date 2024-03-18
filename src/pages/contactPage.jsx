@@ -12,10 +12,10 @@ export default function ContactPage() {
 
     return (
         <>
-            <div className="w-full bg-black text-white">
+            <div className="w-full bg-black text-white select-none">
                 <Header />
 
-                <div className="pt-24 w-full flex flex-col items-center px-5 gap-5">
+                <div className="pt-24 w-full flex flex-col items-center px-5 gap-5 pb-5">
                     <p className="text-textcolor text-lg">Social Media</p>
 
                     <div className="w-full bg-bgcolor p-5 flex flex-col gap-3 rounded-lg">
@@ -35,40 +35,39 @@ export default function ContactPage() {
                         </Link>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full bg-bgcolor p-5 rounded-lg">
-                        <p className="text-center text-textcolor ">Thank you for visiting my website, let me know if you have something to say</p>
+                    <p className="text-center text-textcolor px-5">Thank you for visiting my website, let me know if you have something to say</p>
+                    <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full bg-bgcolor p-5 rounded-lg ">
                         {/* Fullname */}
-
                         <div className="flex justify-between items-center">
                             <label htmlFor="name">Name :</label>
-                            <input type="text" name="name" id="name" className="w-56 p-2 text-black" />
+                            <input type="text" name="name" id="name" className="w-56 p-2 text-black rounded-sm" />
                             <ValidationError prefix="Name" field="name" errors={state.errors} />
                         </div>
                         {/* Fullname End */}
                         {/* Email */}
                         <div className="flex justify-between items-center">
                             <label htmlFor="email">Email :</label>
-                            <input type="email" id="email" name="email" className="w-56 p-2 text-black" />
+                            <input type="email" id="email" name="email" className="w-56 p-2 text-black rounded-sm" />
                             <ValidationError prefix="Email" field="email" errors={state.errors} />
                         </div>
                         {/* Email End */}
 
                         <div className="flex justify-between items-center">
                             <label htmlFor="subject">Subject :</label>
-                            <input type="text" name="subject" id="subject" className="w-56 p-2 text-black" />
+                            <input type="text" name="subject" id="subject" className="w-56 p-2 text-black rounded-sm" />
                             <ValidationError prefix="Subject" field="subject" errors={state.errors} />
                         </div>
 
                         {/* Message */}
                         <div className="flex justify-between items-center">
                             <label htmlFor="message">Message :</label>
-                            <textarea id="message" name="message" className="w-56 p-2 text-black" />
+                            <textarea id="message" name="message" className="w-56 p-2 text-black rounded-sm" />
                             <ValidationError prefix="Message" field="message" errors={state.errors} />
                         </div>
                         {/* Message End */}
 
                         <button type="submit" disabled={state.submitting} className="w-full px-14">
-                            <p className="bg-textcolor text-black rounded-lg p-3">Submit</p>
+                            <p className="bg-yellow-500 text-lg text-black rounded-lg p-3">Submit</p>
                         </button>
                     </form>
                 </div>

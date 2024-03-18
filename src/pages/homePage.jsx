@@ -7,7 +7,7 @@ export default function HomePage(){
 
     return(
         <>
-        <div className="bg-black w-full h-dvh">
+        <div className="bg-black w-full h-dvh select-none">
             <Header/>
 
             <div className=" w-full font-montserat text-white pt-32 px-5 flex flex-col items-center gap-5">

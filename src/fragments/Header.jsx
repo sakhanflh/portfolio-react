@@ -13,12 +13,12 @@ export function Header(){
 
     return(
         <>
-            <div className="bg-black w-full h-16 fixed z-50 flex items-center justify-between px-3">
+            <div className="bg-black w-full h-16 fixed z-50 flex items-center justify-between px-3 select-none" >
                 <div>
                     <IoMdMenu className="text-textcolor text-3xl" onClick={handleShowSidebar}/>
                 </div>
                 
-                <div className="w-14">
+                <div className="w-12">
                     <img src="/img/Senech-white.png" alt="" />
                 </div>
 

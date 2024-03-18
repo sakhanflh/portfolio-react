@@ -1,11 +1,10 @@
 // import { useHistory } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function SubmitPage() {
-    // const histroy = useHistory();
-
-    // const handleBack = () => {
-    //     histroy.push('/contact')
-    // }
+    const handleClick = () => {
+        console.log('first')
+    }
 
     return (
         <>
@@ -16,7 +15,9 @@ export default function SubmitPage() {
 
                 <div  className="flex flex-col gap-5">
                     <h1>Thanks for visiting my website🙌</h1>
-                    <button className="bg-yellow-500 text-lg text-black p-5" >Back</button>
+                        <Link to={'/contact'} className="bg-yellow-500 text-lg text-black p-5 flex items-center justify-center z-50" onClick={handleClick}>
+                            <button>Back</button>
+                        </Link>
                 </div>
             </div>
         </>
