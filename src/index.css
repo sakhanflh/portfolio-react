@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#skill-p {
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+#skill-utility:hover {
+    transform: scale(0.9);
+}
+#skill-utility:hover #skill-p {
+    display: inline;
+    transition: 0.5s ease-in-out;
+}

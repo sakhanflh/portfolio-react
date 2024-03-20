@@ -13,6 +13,7 @@ export default {
       colors: {
         textcolor: '#FFD95A',
         bgcolor: 'rgb(20, 20, 20)',
+        btncolor: '#221c0a',
       },
     },
   },
